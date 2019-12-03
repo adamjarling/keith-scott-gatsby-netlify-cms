@@ -1,5 +1,6 @@
 import React from "react";
 import signature from "../images/keith-scott-signature2.png";
+import { Link } from "gatsby";
 
 const Footer = class extends React.Component {
   render() {

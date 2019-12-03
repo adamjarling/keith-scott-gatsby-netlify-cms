@@ -6,15 +6,15 @@ import Header from "../components/Header";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import "../styles/keith-styles.css";
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "../styles/app.scss";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="en" className="k-theme" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -53,7 +53,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       {/* <Navbar /> */}
       <Header />
-      <div>{children}</div>
+      <main>{children}</main>
       <Footer />
     </div>
   );

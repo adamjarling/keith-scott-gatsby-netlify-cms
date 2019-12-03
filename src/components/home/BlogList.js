@@ -10,7 +10,9 @@ class BlogList extends React.Component {
 
     return (
       <div>
-        <h2 className="section-title">Fishing Blog</h2>
+        <header className="section-header">
+          <h2 className="section-title">Fishing Blog</h2>
+        </header>
         {posts &&
           posts.map(({ node: post }) => (
             <div key={post.id}>
@@ -31,10 +33,7 @@ class BlogList extends React.Component {
                     </div>
                   ) : null}
                   <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
+                    <Link className="title is-size-4" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>

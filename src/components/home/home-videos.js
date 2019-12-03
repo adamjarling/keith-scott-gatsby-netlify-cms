@@ -2,14 +2,17 @@ import React from "react";
 
 const HomeVideos = () => {
   return (
-    <div className="fullwidth-block why-chooseus-section">
-      <h2 className="section-title">I Got The Blues, Ya'll</h2>
+    <div>
+      <header className="section-header">
+        <h2 className="section-title">I Got The Blues, Ya'll</h2>
+      </header>
 
-      <div className="row">
-        <div className="col-md-6">
+      <div className="columns">
+        <div className="column">
           <div className="feature">
             <figure className="cut-corner">
               <iframe
+                title="Sherwood Sessions - Keith Live and Acoustic"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/OIOip4ld5w4"
@@ -23,10 +26,11 @@ const HomeVideos = () => {
             <p>Sherwood Sessions - Keith Live and Acoustic</p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="column">
           <div className="feature">
             <figure className="cut-corner">
               <iframe
+                title="Live at the Salmon Arm Roots & Blues Festival"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/WNt21ZHD608?list=PL4jAzqdtu1-NEabFhfCweYRoddTTdShW7"
@@ -43,11 +47,12 @@ const HomeVideos = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-md-6">
+      <div className="columns">
+        <div className="column">
           <div className="feature">
             <figure className="cut-corner">
               <iframe
+                title="Live Keith Scott and the Electric Blues Junkies"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/dS1sN1douxs"
@@ -61,10 +66,11 @@ const HomeVideos = () => {
             <p>Reggies - Chicago, IL</p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="column">
           <div className="feature">
             <figure className="cut-corner">
               <iframe
+                title="Messin Around"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/nWHVi0lvxek"

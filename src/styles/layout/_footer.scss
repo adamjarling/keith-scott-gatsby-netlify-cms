@@ -1,0 +1,39 @@
+.site-footer {
+  background: #191919;
+  padding: 50px 0;
+  text-align: center;
+
+  .social-links {
+    margin: 50px 0;
+
+    a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(0, #353535, #353535) top left,
+        linear-gradient(0, #353535, #353535) top right,
+        linear-gradient(315deg, transparent 5px, #353535 0) bottom right,
+        linear-gradient(0, #353535, #353535) bottom left;
+      background-size: 55% 55%;
+      background-repeat: no-repeat;
+      color: white;
+      margin: 0 5px;
+      font-size: 20px;
+      font-size: 1.25em;
+      line-height: 45px;
+
+      &:hover {
+        background: linear-gradient(0, #4f4f4f, #4f4f4f) top left,
+          linear-gradient(0, #4f4f4f, #4f4f4f) top right,
+          linear-gradient(315deg, transparent 5px, #4f4f4f 0) bottom right,
+          linear-gradient(0, #4f4f4f, #4f4f4f) bottom left;
+        background-size: 55% 55%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.footer-signature {
+  width: 250px;
+}

@@ -147,7 +147,7 @@ const IndexPage = ({ data }) => {
       <BannerSlider />
       <QuoteSlider />
       <div className="container">
-        <section>
+        <section className="fullwidth-block bottom-margin">
           <header className="section-header">
             <h2 className="section-title">New Single "Rolling Blues"!</h2>
           </header>
@@ -161,10 +161,12 @@ const IndexPage = ({ data }) => {
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/482783187&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
         </section>
-        <section>
+        <section className="fullwidth-block bottom-margin">
           <HomeVideos />
         </section>
-        <BlogList />
+        <section className="fullwidth-block bottom-margin">
+          <BlogList />
+        </section>
       </div>
     </Layout>
   );

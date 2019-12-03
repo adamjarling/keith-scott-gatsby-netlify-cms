@@ -4,7 +4,7 @@ import signature from "../images/keith-logo-horizontal.png";
 import { globalHistory as history } from "@reach/router";
 
 const Nav = () => {
-  const { location, navigate } = history;
+  const { location } = history;
   const pathName = location.pathname;
 
   return (
@@ -54,12 +54,20 @@ const Nav = () => {
 const Header = props => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  const { location } = history;
+  const pathName = location.pathname;
+
   const handleMobileButtonClick = () => {
     setMobileNavOpen(!mobileNavOpen);
   };
 
   return (
-    <header className="site-header">
+    /*
+    <header
+      className={`site-header header-wrapper ${
+        pathName === "" ? "header-collapse" : ""
+      }`}
+    >
       <div className="container">
         <Link to="/" id="branding">
           <img
@@ -89,6 +97,44 @@ const Header = props => {
         >
           <Nav />
         </div>
+      </div>
+    </header>
+    */
+
+    <header className="site-header">
+      <div className="container">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+          <div className="navbar-brand">
+            <Link to="/" id="branding">
+              <img
+                src={signature}
+                alt="Keith Scott Signature"
+                className="signature"
+              />
+              <small className="site-description">
+                Heavy Blues. The Official Website of Keith Scott
+              </small>
+            </Link>
+
+            <a
+              role="button"
+              className="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div className="navbar-menu main-navigation">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <Nav />
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
   );

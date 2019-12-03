@@ -46,8 +46,8 @@ const AboutPage = ({ data }) => {
 
       <div className="fullwidth-block inner-content">
         <div className="container">
-          <div className="row">
-            <div className="col-md-7">
+          <div className="columns">
+            <div className="column is-four-fifths">
               <div className="content">
                 <h2 className="entry-title">Here's Some History...</h2>
                 <AboutFeaturedImage />
@@ -229,7 +229,7 @@ const AboutPage = ({ data }) => {
                 <p>- Steve Sharp, contributing writer, Living Blues magazine</p>
               </div>
             </div>
-            <div className="col-md-4 col-md-push-1">
+            <div className="column is-one-fifth">
               <aside className="sidebar">
                 <div className="widget">
                   <h3 className="widget-title">Discography</h3>
