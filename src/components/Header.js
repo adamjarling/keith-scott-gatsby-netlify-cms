@@ -12,7 +12,9 @@ const Nav = () => {
       <li
         className={`menu-item ${pathName === "/" ? "current-menu-item" : ""}`}
       >
-        <Link to="/">Home</Link>
+        <Link to="/" className="navbar-item">
+          Home
+        </Link>
       </li>
       <li
         className={`menu-item ${
@@ -51,6 +53,34 @@ const Nav = () => {
   );
 };
 
+const NavNew = () => {
+  const { location } = history;
+  const pathName = location.pathname;
+
+  return (
+    <>
+      <Link to="/" className="navbar-item">
+        Home
+      </Link>
+      <Link to="/about/" className="navbar-item">
+        About
+      </Link>
+      <Link to="/gallery/" className="navbar-item">
+        Gallery
+      </Link>
+      <Link to="/music/" className="navbar-item">
+        Music
+      </Link>
+      <Link to="/tour-dates/" className="navbar-item">
+        Tour Dates
+      </Link>
+      <a href="https://goo.gl/NREiMX" target="_blank" className="navbar-item">
+        Videos
+      </a>
+    </>
+  );
+};
+
 const Header = props => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -62,56 +92,17 @@ const Header = props => {
   };
 
   return (
-    /*
-    <header
-      className={`site-header header-wrapper ${
-        pathName === "" ? "header-collapse" : ""
-      }`}
-    >
-      <div className="container">
-        <Link to="/" id="branding">
-          <img
-            src={signature}
-            alt="Keith Scott Signature"
-            className="signature"
-          />
-          <small className="site-description">
-            Heavy Blues. The Official Website of Keith Scott
-          </small>
-        </Link>
-
-        <nav className="main-navigation">
-          <button
-            type="button"
-            className="toggle-menu"
-            onClick={handleMobileButtonClick}
-          >
-            <i className="fa fa-bars"></i>
-          </button>
-          <Nav />
-        </nav>
-
-        <div
-          className="mobile-menu"
-          style={{ display: mobileNavOpen ? "block" : "none" }}
-        >
-          <Nav />
-        </div>
-      </div>
-    </header>
-    */
-
     <header className="site-header">
       <div className="container">
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <Link to="/" id="branding">
+            <Link to="/" className="navbar-item logo-item">
               <img
                 src={signature}
                 alt="Keith Scott Signature"
-                className="signature"
+                className="keith-logo"
               />
-              <small className="site-description">
+              <small className="site-description is-hidden-mobile">
                 Heavy Blues. The Official Website of Keith Scott
               </small>
             </Link>
@@ -121,17 +112,20 @@ const Header = props => {
               className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
+              onClick={handleMobileButtonClick}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
           </div>
-          <div className="navbar-menu main-navigation">
+          <div
+            className={`navbar-menu main-navigation ${
+              mobileNavOpen ? "is-active" : ""
+            }`}
+          >
             <div class="navbar-end">
-              <div class="navbar-item">
-                <Nav />
-              </div>
+              <NavNew />
             </div>
           </div>
         </nav>
