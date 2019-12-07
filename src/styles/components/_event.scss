@@ -1,0 +1,42 @@
+.event {
+  position: relative;
+  padding-left: 100px;
+
+  .entry-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    background: #78a2ea;
+    background: linear-gradient(0deg, #78a2ea, #78a2ea) top left,
+      linear-gradient(0deg, #78a2ea, #78a2ea) top right,
+      linear-gradient(315deg, transparent 10px, #78a2ea 0) bottom right,
+      linear-gradient(0deg, #78a2ea, #78a2ea) bottom left;
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+    .date {
+      font-size: 36px;
+      font-size: 2.25em;
+      font-weight: 900;
+    }
+
+    .month {
+      font-size: 14px;
+      font-size: 0.875em;
+      text-transform: uppercase;
+    }
+  }
+
+  .entry-title {
+    margin-bottom: 0;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

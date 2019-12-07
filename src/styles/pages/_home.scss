@@ -1,3 +1,10 @@
+.site-header {
+  &.home {
+    position: absolute;
+    width: 100%;
+  }
+}
+
 .feature {
   text-align: center;
   margin-bottom: 50px;

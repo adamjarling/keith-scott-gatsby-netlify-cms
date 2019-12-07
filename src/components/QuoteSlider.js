@@ -50,7 +50,7 @@ const QuoteSlider = () => {
             <li>
               <a
                 className="flex-prev"
-                href="#"
+                href="#nothing"
                 disabled={currentQuote === 0}
                 onClick={handleClick}
               >
@@ -60,7 +60,7 @@ const QuoteSlider = () => {
             <li>
               <a
                 className="flex-next"
-                href="#"
+                href="#nothing"
                 disabled={currentQuote === 1}
                 onClick={handleClick}
               >

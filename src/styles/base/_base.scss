@@ -1,5 +1,22 @@
+body {
+  //color: #848484;
+}
+
 .k-theme {
   background: $dark;
+}
+
+.content {
+  h2 {
+    &.entry-title {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  blockquote {
+    background-color: inherit;
+  }
 }
 
 .fullwidth-block {

@@ -67,8 +67,10 @@ const Discography = () => {
                 {title}
               </a>
             </h3>
-            <span className="year">{year}</span>
-            <span className="track">{trackCount}</span>
+            <div className="meta">
+              <p className="year">{year}</p>
+              <p className="track">{trackCount}</p>
+            </div>
           </div>
         </li>
       ))}

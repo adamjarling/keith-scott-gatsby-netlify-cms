@@ -1,9 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Header from "../components/Header";
-import "./all.sass";
+//import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
@@ -51,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      {/* <Navbar /> */}
+
       <Header />
       <main>{children}</main>
       <Footer />

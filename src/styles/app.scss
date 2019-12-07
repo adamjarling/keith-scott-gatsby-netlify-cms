@@ -6,8 +6,7 @@
 // 'abstracts/mixins';
 
 // 2. Vendors
-// @import
-//   'vendors/normalize';
+@import "vendors/bulma/_bulma.sass";
 
 // 3. Base stuff
 @import "base/base",
@@ -19,10 +18,14 @@
 @import "layout/header", "layout/footer";
 
 // 5. Components
+@import "components/discography-list";
+@import "components/event";
 @import "components/quote-slider";
+@import "components/widgets";
 
 // 6. Page-specific styles
 @import "pages/home";
+@import "pages/about";
 
 // 7. Themes
 // @import

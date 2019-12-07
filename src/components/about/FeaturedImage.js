@@ -3,7 +3,7 @@ import myImage from "../../images/IMG_7694.jpg";
 
 const AboutFeaturedImage = () => (
   <figure className="featured-image">
-    <img src={myImage} alt="post image" />
+    <img src={myImage} alt="featured" />
   </figure>
 );
 
