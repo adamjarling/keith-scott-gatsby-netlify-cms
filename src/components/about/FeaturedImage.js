@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../../images/IMG_7694.jpg";
+import myImage from "../../images/album-better-world-out-there.jpg";
 
 const AboutFeaturedImage = () => (
   <figure className="featured-image">
