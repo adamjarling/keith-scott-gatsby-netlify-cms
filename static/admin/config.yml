@@ -14,8 +14,8 @@ public_folder: /img
 collections:
   - name: "gallery_photos"
     label: "Gallery Photos"
-    folder: "src/images/gallery"
-    create: true
+    folder: "src/pages/gallery"
+    create: false
     slug: "{{slug}}"
     fields:
       - {
