@@ -15,7 +15,7 @@ collections:
   - name: "gallery_photos"
     label: "Gallery Photos"
     folder: "src/pages/gallery"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - {

@@ -23,6 +23,7 @@ export const GalleryPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <h2>Testing</h2>
             <p>{description}</p>
             <PostContent content={content} />
           </div>
