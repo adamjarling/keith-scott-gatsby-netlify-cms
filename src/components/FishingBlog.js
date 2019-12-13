@@ -9,7 +9,7 @@ const FishingBlog = () => {
 
   async function getPosts() {
     const response = await fetch(
-      `https://www.googleapis.com/blogger/v3/blogs/1874227029775015733/posts?key=${process.env.BLOGGER_API_KEY}`
+      `https://www.googleapis.com/blogger/v3/blogs/1874227029775015733/posts?key=${process.env.GATSBY_BLOGGER_API_KEY}`
     );
     const posts = await response.json();
     console.log("posts", posts);
