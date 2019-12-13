@@ -29,8 +29,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-grid-gallery": "^0.5.5",
     "react-helmet": "^5.2.0",
+    "react-lightbox-component": "^1.2.1",
     "react-responsive-carousel": "^3.1.51",
     "uuid": "^3.2.1"
   },

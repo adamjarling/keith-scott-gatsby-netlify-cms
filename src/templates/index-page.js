@@ -9,6 +9,7 @@ import BannerSlider from "../components/BannerSlider";
 import QuoteSlider from "../components/QuoteSlider";
 import HomeVideos from "../components/home/home-videos";
 import BlogList from "../components/home/BlogList";
+import FishingBlog from "../components/FishingBlog";
 
 export const IndexPageTemplate = ({
   image,
@@ -165,7 +166,7 @@ const IndexPage = ({ data }) => {
           <HomeVideos />
         </section>
         <section className="fullwidth-block bottom-margin">
-          <BlogList />
+          <FishingBlog />
         </section>
       </div>
     </Layout>
