@@ -29,6 +29,34 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
 
+  - name: "reviews"
+    label: "Reviews"
+    folder: "src/pages/reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "reviews-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publication", name: "publication", widget: "string" }
+      - {
+          label: "Review Date",
+          name: "reviewDate",
+          widget: "datetime",
+          required: false,
+        }
+      - {
+          label: "Featured Image",
+          name: "featuredimage",
+          widget: image,
+          required: false,
+        }
+      - { label: "Review", name: "body", widget: markdown }
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
