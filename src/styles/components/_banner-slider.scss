@@ -11,6 +11,11 @@
   transition: 0.3s ease;
   transition-delay: 0.3s;
 
+  @media (max-width: 768px) {
+    font-size: 3em;
+    top: 60%;
+  }
+
   &.subtitle {
     color: #78a2ea;
     font-size: 3em;
@@ -22,5 +27,10 @@
     display: inline-block;
     top: 50%;
     padding: 10px 20px;
+
+    @media (max-width: 768px) {
+      font-size: 1em;
+      top: 80%;
+    }
   }
 }

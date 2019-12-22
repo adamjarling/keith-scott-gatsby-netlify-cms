@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeVideos = () => {
   return (
-    <div>
+    <div className="container">
       <header className="section-header">
         <h2 className="section-title">I Got The Blues, Ya'll</h2>
       </header>

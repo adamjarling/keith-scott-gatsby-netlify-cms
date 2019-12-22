@@ -12,12 +12,12 @@ const posters = [travers, may, sept, hardRock, jan];
 const TourDates = () => {
   return (
     <Layout>
-      <div className="fullwidth-block inner-content" data-bg-color="#191919">
+      <section className="fullwidth-block inner-content section">
         <div className="container">
           <div className="content fullwidth">
             <h2 className="entry-title">Tour Dates</h2>
             <div className="columns">
-              <div className="column is-four-fifths">
+              <div className="column is-two-thirds">
                 {tourDates.map(td => {
                   let date = new Date(td.date);
                   let day = date.getUTCDate();
@@ -39,7 +39,7 @@ const TourDates = () => {
                   );
                 })}
               </div>
-              <div className="column is-one-fifth">
+              <div className="column is-one-third">
                 {posters.map(poster => (
                   <div className="item">
                     <img src={poster} />
@@ -49,7 +49,7 @@ const TourDates = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

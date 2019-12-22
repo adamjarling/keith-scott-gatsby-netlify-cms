@@ -39,36 +39,34 @@ const QuoteSlider = () => {
   };
 
   return (
-    <div className="fullwidth-block testimonial-section">
-      <div className="container">
-        <div className="quote-slider">
-          <ul className="slides">
-            {currentQuote === 0 && <Quote {...quotes[0]} />}
-            {currentQuote === 1 && <Quote {...quotes[1]} />}
-          </ul>
-          <ul className="flex-direction-nav">
-            <li>
-              <a
-                className="flex-prev"
-                href="#nothing"
-                disabled={currentQuote === 0}
-                onClick={handleClick}
-              >
-                <i className="fa fa-caret-left"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex-next"
-                href="#nothing"
-                disabled={currentQuote === 1}
-                onClick={handleClick}
-              >
-                <i className="fa fa-caret-right"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div className="container">
+      <div className="quote-slider">
+        <ul className="slides">
+          {currentQuote === 0 && <Quote {...quotes[0]} />}
+          {currentQuote === 1 && <Quote {...quotes[1]} />}
+        </ul>
+        <ul className="flex-direction-nav">
+          <li>
+            <a
+              className="flex-prev"
+              href="#nothing"
+              disabled={currentQuote === 0}
+              onClick={handleClick}
+            >
+              <i className="fa fa-caret-left"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex-next"
+              href="#nothing"
+              disabled={currentQuote === 1}
+              onClick={handleClick}
+            >
+              <i className="fa fa-caret-right"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

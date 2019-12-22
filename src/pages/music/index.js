@@ -5,10 +5,7 @@ import Discography from "../../components/Discography";
 const Music = () => {
   return (
     <Layout>
-      <div
-        className="fullwidth-block music inner-content"
-        data-bg-color="#191919"
-      >
+      <section className="section music inner-content">
         <div className="container content">
           <iframe
             width="100%"
@@ -20,7 +17,7 @@ const Music = () => {
 
           <Discography />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

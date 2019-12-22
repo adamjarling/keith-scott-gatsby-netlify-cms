@@ -41,6 +41,10 @@
       color: rgba(255, 255, 255, 0.15);
       font-weight: 300;
     }
+
+    @media (max-width: 768px) {
+      background-color: black;
+    }
   }
 
   &.is-active {

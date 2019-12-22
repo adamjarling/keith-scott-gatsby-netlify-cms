@@ -44,7 +44,7 @@ const AboutPage = ({ data }) => {
         content={post.html}
       /> */}
 
-      <div className="about fullwidth-block inner-content">
+      <section className="about section inner-content">
         <div className="container">
           <div className="columns">
             <div className="column is-three-quarters">
@@ -239,7 +239,7 @@ const AboutPage = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

@@ -9,6 +9,12 @@
       font-weight: 300;
       line-height: normal;
       padding-bottom: 1rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.25em;
+        line-height: 2rem;
+        font-style: italic;
+      }
     }
 
     cite {
