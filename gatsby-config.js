@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Keith Scott Blues - heavy blues musician Chicago USA",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+      "Remarkably versatile, Chicago-based blues/rock guitarist Keith Scott has been working his way methodically up through the blues' ranks since his parents bought him his first guitar at age 14 and his young ears heard Muddy Waters in 1980."
   },
   plugins: [
     "gatsby-plugin-react-helmet",
