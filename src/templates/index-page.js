@@ -1,16 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import BannerSlider from "../components/BannerSlider";
 import QuoteSlider from "../components/QuoteSlider";
 import HomeVideos from "../components/home/home-videos";
-import BlogList from "../components/home/BlogList";
 import FishingBlog from "../components/FishingBlog";
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
-
+const IndexPage = () => {
   return (
     <Layout>
       {/* <IndexPageTemplate
@@ -47,7 +44,12 @@ const IndexPage = ({ data }) => {
         <HomeVideos />
       </section>
       <section className="section">
-        <FishingBlog />
+        <div className="container">
+          <header className="section-header">
+            <h2 className="section-title">Fishing Blog</h2>
+          </header>
+          <FishingBlog />
+        </div>
       </section>
     </Layout>
   );

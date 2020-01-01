@@ -24,13 +24,22 @@ const Footer = class extends React.Component {
             <a
               href="https://www.facebook.com/Keith-Scott-Blues-284974657920/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-facebook-square"></i>
             </a>
-            <a href="https://www.instagram.com/fishing_blues/" target="_blank">
+            <a
+              href="https://www.instagram.com/fishing_blues/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://goo.gl/NREiMX" target="_blank">
+            <a
+              href="https://goo.gl/NREiMX"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-youtube"></i>
             </a>
           </div>

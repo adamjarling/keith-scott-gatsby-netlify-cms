@@ -13,7 +13,7 @@ const Discography = () => {
           </figure>
           <div className="detail">
             <h3>
-              <a href={url} target="_blank">
+              <a href={url} target="_blank" rel="noopener noreferrer">
                 {title}
               </a>
             </h3>

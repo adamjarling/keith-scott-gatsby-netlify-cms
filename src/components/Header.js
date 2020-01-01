@@ -4,8 +4,6 @@ import signature from "../images/keith-logo-horizontal.png";
 import { globalHistory as history } from "@reach/router";
 
 const NavNew = () => {
-  const { location } = history;
-
   return (
     <>
       <Link to="/" className="navbar-item">
@@ -23,7 +21,12 @@ const NavNew = () => {
       <Link to="/tour/" className="navbar-item">
         Tour Dates
       </Link>
-      <a href="https://goo.gl/NREiMX" target="_blank" className="navbar-item">
+      <a
+        href="https://goo.gl/NREiMX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="navbar-item"
+      >
         Videos
       </a>
     </>
