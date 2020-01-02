@@ -15,7 +15,7 @@ class FishingBlog extends React.Component {
             <div key={post.id}>
               <article className="is-clearfix">
                 <Img
-                  fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
+                  fluid={post.frontmatter.photos[0].childImageSharp.fluid}
                   className="is-pulled-left fishing-blog-image"
                 />
                 <header>
@@ -61,7 +61,7 @@ export default () => (
       query FishingBlogQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "fishingblog-post" } } }
         ) {
           edges {
             node {
@@ -74,8 +74,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
-                featuredimage {
+                photos {
                   childImageSharp {
                     fluid(maxWidth: 200, quality: 100) {
                       ...GatsbyImageSharpFluid
