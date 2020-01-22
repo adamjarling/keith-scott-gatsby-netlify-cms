@@ -46,6 +46,34 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <header className="section-header">
+            <h2 className="section-title">Reviews</h2>
+          </header>
+          <div className="quote-slider">
+            <ul className="slides">
+              <li>
+                <blockquote>
+                  <p>
+                    "Keith Scott Blues is one of our favorite acts to book at
+                    the Hama Hama Oyster Saloon, his upbeat music and high
+                    energy vocals are always a big pull for guests and get
+                    people on their feet! Our staff are big fans of the friendly
+                    musician and as well as being easy and congenial artist to
+                    work with, I am always impressed with the professionalism
+                    and dedication Keith brings to his shows, and to managing
+                    his bookings. We look forward to having Keith back to our
+                    main stage for a number of shows this year."
+                  </p>
+                  <cite>Sara Harvey - Saloon Manager</cite>
+                  <span>Hama Hama Oysters</span>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <header className="section-header">
             <h2 className="section-title">Fishing Blog</h2>
           </header>
           <FishingBlog />
