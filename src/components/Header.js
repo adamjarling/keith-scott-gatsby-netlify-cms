@@ -13,10 +13,13 @@ const NavNew = () => {
         About
       </Link>
       <Link to="/gallery/" className="navbar-item">
-        Gallery
+        Photos
       </Link>
       <Link to="/music/" className="navbar-item">
         Music
+      </Link>
+      <Link to="/art/" className="navbar-item">
+        Art
       </Link>
       <Link to="/tour/" className="navbar-item">
         Tour Dates
