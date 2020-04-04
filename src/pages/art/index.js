@@ -31,11 +31,20 @@ const Art = () => {
             breaker, who would have thought Keith is also a very talented visual
             artist? Below are some samples of Keith's current work.
           </p>
-          <p className="notification">
-            All items are available for purchase and/or donation. In these times
-            of Covid 19 and hardship to the music industry, you can commission
-            Keith to create a custom piece of art for you! Spread the love.
-          </p>
+          <div className="notification is-primary has-text-white is-size-4 has-text-centered">
+            <p>
+              All items are available for purchase and/or donation. In these
+              times of Covid 19 and hardship to the music industry, you can
+              commission Keith to create a custom piece of art for you! Spread
+              the love.
+            </p>
+            <p>
+              Email Keith:{" "}
+              <a href="mailto:keithscottblues@gmail.com">
+                keithscottblues@gmail.com
+              </a>
+            </p>
+          </div>
           <ArtItem label="Live at Checkerboard Lounge" src={Checkerboard} />
           <ArtItem label="Johnny Winter" src={JohnnyWinter} />
           <ArtItem label="Albert King" src={AlbertKing} />

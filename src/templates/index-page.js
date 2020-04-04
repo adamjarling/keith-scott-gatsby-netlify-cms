@@ -21,6 +21,23 @@ const IndexPage = () => {
       /> */}
       <BannerSlider />
       <section className="section">
+        <div className="notification is-primary has-text-white is-size-4 has-text-centered">
+          <p>
+            Please consider donating to your favorite bluesman. Keith is
+            gratefully accepting PayPal donations at:{" "}
+          </p>
+          <p>
+            <a href="https://www.paypal.me/fishingblues" target="_blank">
+              https://www.paypal.me/fishingblues
+            </a>
+          </p>
+          <p>
+            Keep an eye out for a Facebook Live event too! See ya'll soon...
+            stay healthy.
+          </p>
+        </div>
+      </section>
+      <section className="section">
         <QuoteSlider />
       </section>
 
