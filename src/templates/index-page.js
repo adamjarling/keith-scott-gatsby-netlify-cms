@@ -20,21 +20,38 @@ const IndexPage = () => {
         intro={frontmatter.intro}
       /> */}
       <BannerSlider />
-      <section className="section">
-        <div className="notification is-primary has-text-white is-size-4 has-text-centered">
-          <p>
-            Please consider donating to your favorite bluesman. Keith is
-            gratefully accepting PayPal donations at:{" "}
-          </p>
-          <p>
-            <a href="https://www.paypal.me/fishingblues" target="_blank" rel="noopener noreferrer">
-              https://www.paypal.me/fishingblues
-            </a>
-          </p>
-          <p>
-            Keep an eye out for a Facebook Live event too! See ya'll soon...
-            stay healthy.
-          </p>
+      <section className="section content">
+        <div className="container">
+          <div className="notification is-primary has-text-white is-size-4 is-size-5-mobile has-text-centered">
+            <p>
+              Please consider donating to your favorite bluesman. Keith is
+              gratefully accepting PayPal donations at:{" "}
+            </p>
+            <p>
+              <a
+                href="https://www.paypal.me/fishingblues"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.paypal.me/fishingblues
+              </a>
+            </p>
+          </div>
+          <div className="has-text-centered">
+            <p className="notification is-white">
+              Join Keith playing live on Facebook
+              <br />
+              every <strong>Tuesday and Saturday</strong> at{" "}
+              <strong>4pm Eastern Time</strong> USA!!
+              <br />
+              <a
+                href="https://www.facebook.com/keith.scott.5454"
+                className="is-size-3 is-size-5-mobile"
+              >
+                https://www.facebook.com/keith.scott.5454
+              </a>
+            </p>
+          </div>
         </div>
       </section>
       <section className="section">
@@ -44,7 +61,9 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <header className="section-header">
-            <h2 className="section-title">New Single "Rolling Blues"!</h2>
+            <h2 className="section-title is-size-3-mobile">
+              New Single "Rolling Blues"!
+            </h2>
           </header>
           <iframe
             title="Soundcloud player"
@@ -63,7 +82,7 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <header className="section-header">
-            <h2 className="section-title">Reviews</h2>
+            <h2 className="section-title is-size-3-mobile">Reviews</h2>
           </header>
           <div className="quote-slider">
             <ul className="slides">
@@ -91,7 +110,7 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <header className="section-header">
-            <h2 className="section-title">Fishing Blog</h2>
+            <h2 className="section-title is-size-3-mobile">Fishing Blog</h2>
           </header>
           <FishingBlog />
         </div>

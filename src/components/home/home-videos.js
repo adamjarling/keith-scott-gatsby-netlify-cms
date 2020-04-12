@@ -4,7 +4,9 @@ const HomeVideos = () => {
   return (
     <div className="container">
       <header className="section-header">
-        <h2 className="section-title">I Got The Blues, Ya'll</h2>
+        <h2 className="section-title is-size-3-mobile">
+          I Got The Blues, Ya'll
+        </h2>
       </header>
 
       <div className="columns">

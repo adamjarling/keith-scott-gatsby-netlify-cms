@@ -44,9 +44,10 @@ const Footer = class extends React.Component {
             </a>
           </div>
 
-          <p className="copy">
-            Copyright 2019 Keith Scott Official. Developed by Adam J. Arling.
-            All right reserved
+          <p className="copy is-size-6-mobile">
+            Copyright 2020 Keith Scott Official. Developed by{" "}
+            <a href="https://adamarling.com">Adam J. Arling</a>. All right
+            reserved
           </p>
         </div>
       </footer>

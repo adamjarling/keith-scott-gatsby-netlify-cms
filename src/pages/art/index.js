@@ -2,9 +2,9 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Checkerboard from "../../images/sketches/checkerboard-lounge.jpg";
 import JohnnyWinter from "../../images/sketches/20180123_202517-1.jpg";
-import AlbertKing from "../../images/sketches/sketch-albert-king.jpg";
-import FreddyKing from "../../images/sketches/sketch-freddy-king.jpg";
 import JazzBand from "../../images/sketches/jazz-band.jpg";
+import BluesDude from "../../images/sketches/blues-dude.jpg";
+import JohnLee from "../../images/sketches/john-lee-hooker.jpg";
 
 const ArtItem = ({ label, src }) => (
   <>
@@ -28,7 +28,7 @@ const Art = () => {
           <h2 className="entry-title">Art</h2>
           <p>
             In addition to being a bluesman, fishing afficiando, and heart
-            breaker, who would have thought Keith is also a very talented visual
+            breaker, who would have thought Keith is also a very talented folk
             artist? Below are some samples of Keith's current work.
           </p>
           <div className="notification is-primary has-text-white is-size-4 has-text-centered">
@@ -47,10 +47,10 @@ const Art = () => {
           </div>
           <ArtItem label="Live at Checkerboard Lounge" src={Checkerboard} />
           <ArtItem label="Johnny Winter" src={JohnnyWinter} />
-          <ArtItem label="Albert King" src={AlbertKing} />
+          <ArtItem label="John Lee Hooker" src={JohnLee} />
           <ArtItem label="Live at Checkerboard Lounge" src={Checkerboard} />
           <ArtItem label="Jazz Band" src={JazzBand} />
-          <ArtItem label="Freddy King" src={FreddyKing} />
+          <ArtItem label="Blues Dude" src={BluesDude} />
         </div>
       </section>
     </Layout>
