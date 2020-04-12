@@ -27,7 +27,7 @@ const IndexPage = () => {
             gratefully accepting PayPal donations at:{" "}
           </p>
           <p>
-            <a href="https://www.paypal.me/fishingblues" target="_blank">
+            <a href="https://www.paypal.me/fishingblues" target="_blank" rel="noopener noreferrer">
               https://www.paypal.me/fishingblues
             </a>
           </p>

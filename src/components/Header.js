@@ -61,7 +61,7 @@ const Header = () => {
                 Heavy Blues. The Official Website of Keith Scott
               </small>
             </Link>
-
+            { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
             <a
               role="button"
               className="navbar-burger"

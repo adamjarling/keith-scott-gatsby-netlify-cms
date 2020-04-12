@@ -22,7 +22,7 @@ const Footer = class extends React.Component {
 
           <div className="social-links">
             <a
-              href="https://www.facebook.com/Keith-Scott-Blues-284974657920/"
+              href="https://www.facebook.com/keith.scott.5454"
               target="_blank"
               rel="noopener noreferrer"
             >
