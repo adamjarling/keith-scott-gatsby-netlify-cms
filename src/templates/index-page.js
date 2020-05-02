@@ -6,8 +6,13 @@ import BannerSlider from "../components/BannerSlider";
 import QuoteSlider from "../components/QuoteSlider";
 import HomeVideos from "../components/home/home-videos";
 import FishingBlog from "../components/FishingBlog";
+import TourDates from "../components/TourDates";
+import useTourDates from "../hooks/useTourDates";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
+  const tourDates = useTourDates();
+
   return (
     <Layout>
       {/* <IndexPageTemplate
@@ -22,35 +27,35 @@ const IndexPage = () => {
       <BannerSlider />
       <section className="section content">
         <div className="container">
-          <div className="notification is-primary has-text-white is-size-4 is-size-5-mobile has-text-centered">
-            <p>
-              Please consider donating to your favorite bluesman. Keith is
-              gratefully accepting PayPal donations at:{" "}
-            </p>
-            <p>
-              <a
-                href="https://www.paypal.me/fishingblues"
-                target="_blank"
-                rel="noopener noreferrer"
+          <div className="columns">
+            <div className="column is-half">
+              <div className="notification is-primary has-text-white is-size-4 is-size-5-mobile has-text-centered">
+                <p>
+                  Please consider donating to your favorite bluesman. Keith is
+                  gratefully accepting PayPal donations at:{" "}
+                </p>
+                <p>
+                  <a
+                    href="https://www.paypal.me/fishingblues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://www.paypal.me/fishingblues
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="column is-half">
+              <h3>Tour Dates</h3>
+              <TourDates tourDates={tourDates.slice(0, 2)} />
+              <Link
+                to="/tour"
+                className="button is-fullwidth"
+                style={{ marginTop: "1rem" }}
               >
-                https://www.paypal.me/fishingblues
-              </a>
-            </p>
-          </div>
-          <div className="has-text-centered">
-            <p className="notification is-white">
-              Join Keith playing live on Facebook
-              <br />
-              every <strong>Tuesday and Saturday</strong> at{" "}
-              <strong>4pm Eastern Time</strong> USA!!
-              <br />
-              <a
-                href="https://www.facebook.com/keith.scott.5454"
-                className="is-size-3 is-size-5-mobile"
-              >
-                https://www.facebook.com/keith.scott.5454
-              </a>
-            </p>
+                View All Dates
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -122,9 +127,9 @@ const IndexPage = () => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -10,7 +10,7 @@ export const GalleryPostTemplate = ({
   contentComponent,
   description,
   title,
-  helmet
+  helmet,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -38,7 +38,7 @@ GalleryPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
 };
 
 const GalleryPost = ({ data }) => {
@@ -68,8 +68,8 @@ const GalleryPost = ({ data }) => {
 
 GalleryPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
+    markdownRemark: PropTypes.object,
+  }),
 };
 
 export default GalleryPost;

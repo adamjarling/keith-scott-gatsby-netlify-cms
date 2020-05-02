@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -11,7 +11,7 @@ export const FishingBlogPostTemplate = ({
   contentComponent,
   title,
   helmet,
-  photos = []
+  photos = [],
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -34,7 +34,7 @@ export const FishingBlogPostTemplate = ({
         <div className="container">
           <div className="columns is-multiline">
             {photos.length > 0 &&
-              photos.map(photo => (
+              photos.map((photo) => (
                 <div className="column is-half">
                   <Img key={photo.id} fluid={photo.childImageSharp.fluid} />
                 </div>
@@ -50,7 +50,7 @@ FishingBlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
 };
 
 const FishingBlogPost = ({ data }) => {
@@ -75,8 +75,8 @@ const FishingBlogPost = ({ data }) => {
 
 FishingBlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
+    markdownRemark: PropTypes.object,
+  }),
 };
 
 export default FishingBlogPost;
