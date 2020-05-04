@@ -9,6 +9,7 @@ import FishingBlog from "../components/FishingBlog";
 import TourDates from "../components/TourDates";
 import useTourDates from "../hooks/useTourDates";
 import { Link } from "gatsby";
+import FacebookWeeklyGigs from "../components/FacebookWeeklyGigs";
 
 const IndexPage = () => {
   const tourDates = useTourDates();
@@ -46,15 +47,16 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="column is-half">
-              <h3>Tour Dates</h3>
+              <h3 className="is-uppercase has-text-white">Tour Dates</h3>
               <TourDates tourDates={tourDates.slice(0, 2)} />
               <Link
                 to="/tour"
                 className="button is-fullwidth"
-                style={{ marginTop: "1rem" }}
+                style={{ margin: "1rem 0" }}
               >
                 View All Dates
               </Link>
+              <FacebookWeeklyGigs />
             </div>
           </div>
         </div>

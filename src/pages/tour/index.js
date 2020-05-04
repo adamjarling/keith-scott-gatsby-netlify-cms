@@ -8,6 +8,7 @@ import jan from "../../images/Keith-Jan2016.jpg";
 //import { tourDates, monthNames } from "../../tour-dates";
 import useTourDates from "../../hooks/useTourDates";
 import TourDates from "../../components/TourDates";
+import FacebookWeeklyGigs from "../../components/FacebookWeeklyGigs";
 
 const posters = [travers, may, sept, hardRock, jan];
 
@@ -21,8 +22,10 @@ const TourDatesPage = () => {
         <div className="container">
           <div className="content fullwidth">
             <h2 className="entry-title">Tour Dates</h2>
+
             <div className="columns">
               <div className="column is-two-thirds">
+                <FacebookWeeklyGigs />
                 <TourDates tourDates={tourDates} />
               </div>
               <div className="column is-one-third">
