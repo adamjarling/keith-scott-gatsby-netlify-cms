@@ -6,6 +6,7 @@ import JazzBand from "../../images/sketches/jazz-band.jpg";
 import BluesDude from "../../images/sketches/blues-dude.jpg";
 import JohnLee from "../../images/sketches/john-lee-hooker.jpg";
 import HeroImageBg from "../../components/HeroImageBg";
+import { graphql } from "gatsby";
 
 const ArtItem = ({ label, src }) => (
   <>

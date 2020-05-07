@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import PhotoGalleryRoll2 from "../../components/PhotoGalleryRoll2";
 import HeroImageBg from "../../components/HeroImageBg";
+import { graphql } from "gatsby";
 
 const GalleryPage = ({ data }) => {
   return (

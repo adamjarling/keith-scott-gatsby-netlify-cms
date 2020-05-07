@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import QuoteSlider from "../components/QuoteSlider";
 import HomeVideos from "../components/home/home-videos";
 import FishingBlog from "../components/FishingBlog";
 import TourDates from "../components/TourDates";

@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 import Discography from "../components/Discography";
-import AboutFeaturedImage from "../components/about/FeaturedImage";
 import HeroImageBg from "../components/HeroImageBg";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {

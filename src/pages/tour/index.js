@@ -9,6 +9,7 @@ import useTourDates from "../../hooks/useTourDates";
 import TourDates from "../../components/TourDates";
 import FacebookWeeklyGigs from "../../components/FacebookWeeklyGigs";
 import HeroImageBg from "../../components/HeroImageBg";
+import { graphql } from "gatsby";
 
 const posters = [travers, may, sept, hardRock, jan];
 
@@ -35,7 +36,7 @@ const TourDatesPage = ({ data }) => {
               <div className="column is-one-third">
                 {posters.map((poster) => (
                   <div className="item" key={poster}>
-                    <img src={poster} />
+                    <img src={poster} alt="Poster" />
                   </div>
                 ))}
               </div>

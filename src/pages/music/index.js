@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { albums } from "../../services/albums";
 import HeroImageBg from "../../components/HeroImageBg";
+import { graphql } from "gatsby";
 
 const Music = ({ data }) => {
   return (
@@ -20,7 +21,11 @@ const Music = ({ data }) => {
                 <div className="card" key={album.title}>
                   <div className="card-image">
                     <figure className="image is-4by3">
-                      <a href={album.url} target="_blank">
+                      <a
+                        href={album.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={album.imgSrc} alt={album.title} />
                       </a>
                     </figure>
@@ -35,6 +40,7 @@ const Music = ({ data }) => {
                         <a
                           href={album.url}
                           target="_blank"
+                          rel="noopener noreferrer"
                           className="button is-primary is-fullwidth"
                         >
                           Buy Now
@@ -53,6 +59,7 @@ const Music = ({ data }) => {
           <div className="columns">
             <div className="column is-6 is-offset-3">
               <iframe
+                title="Soundcloud player"
                 width="100%"
                 height="750"
                 scrolling="no"
