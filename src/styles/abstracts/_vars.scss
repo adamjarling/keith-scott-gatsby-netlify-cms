@@ -1,5 +1,68 @@
-$dark: #141414;
-$lightGrey: #848484;
-$primary: #78a2ea;
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap");
 
-$body-font-size: 21px;
+$Alegreya: "Alegreya Sans SC", sans-serif;
+$Cinzel: "Cinzel", serif;
+$Forum: "Forum", cursive;
+$IstokWeb: "Istok Web", sans-serif;
+$RockSalt: "Rock Salt", cursive;
+
+// Use this pallate
+// $blue: #2d4e8e;
+// $blueRich: #091c45;
+// $blueBright: #5094dc;
+// $blueDarker: #183469;
+// $blueLight: #9eb6c9;
+// $blueLighter: #b0c8de;
+// $blueDarkest: #000c29;
+// $orange: #a3663b;
+// $beige: #7c7c74;
+
+// $light: $blueLighter;
+// $info: $beige;
+// $primary: $blueDarker;
+// $warning: $orange;
+
+$beige: #efc9af;
+$darkBlue: #104c91;
+$turquoise: #1f8ac0;
+
+// Bulma base vars set
+// $white-ter: $beige; // feeds $light
+// $grey-darker: $darkBlue; // feeds $dark
+// $light-invert: $darkBlue;
+// $dark-invert: $beige;
+
+$primary: $turquoise;
+$info: $darkBlue;
+$link: $primary;
+$link-hover: $primary;
+//$body-background-color: $white-ter;
+
+// // Buttons
+// $button-background-color: $primary;
+// $button-color: $light;
+// $button-family: $Alegreya;
+// $button-border-color: $primary;
+// $button-hover-color: $light;
+// $button-border-width: 0;
+
+// Navbar
+$navbar-item-img-max-height: 3rem;
+$navbar-height: 5rem;
+
+// // Typography
+//$body-color: $light;
+$body-font-size: 18px;
+$family-sans-serif: $IstokWeb;
+//$family-secondary: $RockSalt;
+//$subtitle-color: $info;
+//$text-strong: $light;
+
+// // Update Bulma's global variables
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+// $primary: $purple;
+// $link: $beige-light;
+// // Update some of Bulma's component variables
+// $body-background-color: black;
+// $body-color: $beige-lighter;

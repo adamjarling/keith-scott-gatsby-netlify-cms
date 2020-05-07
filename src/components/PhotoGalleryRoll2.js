@@ -22,10 +22,12 @@ class PhotoGalleryRoll2 extends React.Component {
                 <PreviewCompatibleImage
                   imageInfo={{
                     image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`
+                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                   }}
                 />
-                <p className="description">{post.frontmatter.description}</p>
+                <p className="description has-text-centered">
+                  {post.frontmatter.description}
+                </p>
               </article>
             </div>
           ))}
@@ -37,9 +39,9 @@ class PhotoGalleryRoll2 extends React.Component {
 PhotoGalleryRoll2.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export default () => (

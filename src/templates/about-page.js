@@ -5,35 +5,39 @@ import Layout from "../components/Layout";
 import Content from "../components/Content";
 import Discography from "../components/Discography";
 import AboutFeaturedImage from "../components/about/FeaturedImage";
+import HeroImageBg from "../components/HeroImageBg";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+    <div>
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {title}
+                </h2>
+                <PageContent className="content" content={content} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
+  bgImage: PropTypes.string,
 };
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   return (
     <Layout>
       {/* <AboutPageTemplate
@@ -42,14 +46,23 @@ const AboutPage = () => {
         content={post.html}
       /> */}
 
+      <HeroImageBg
+        title="About"
+        subtitle="The Keith Scott Story"
+        bgImage={data.bgImage.childImageSharp.fluid}
+      />
+
       <section className="about section inner-content">
         <div className="container">
           <div className="columns">
             <div className="column is-three-quarters">
               <div className="content">
-                <h2 className="entry-title">Here's Some History...</h2>
-                <AboutFeaturedImage />
-                <p className="leading">
+                <p>
+                  <strong>
+                    - Steve Sharp, contributing writer, Living Blues magazine
+                  </strong>
+                </p>
+                <p>
                   Remarkably versatile, Chicago-based blues/rock guitarist Keith
                   Scott has been working his way methodically up through the
                   blues' ranks since his parents bought him his first guitar at
@@ -223,18 +236,12 @@ const AboutPage = () => {
                   today it did. Whether it's the House of Blues or a small
                   tavern, it's still what I love to do.”
                 </blockquote>
-
-                <p>- Steve Sharp, contributing writer, Living Blues magazine</p>
               </div>
             </div>
-            <div className="column is-one-quarter">
-              <aside className="sidebar">
-                <div className="widget">
-                  <h3 className="widget-title">Discography</h3>
-                  <Discography />
-                </div>
-              </aside>
-            </div>
+            <aside className="column is-one-quarter">
+              <h3 className="title">Discography</h3>
+              <Discography />
+            </aside>
           </div>
         </div>
       </section>
@@ -243,7 +250,7 @@ const AboutPage = () => {
 };
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default AboutPage;
@@ -254,6 +261,16 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+      }
+    }
+    bgImage: file(
+      sourceInstanceName: { eq: "myimages" }
+      relativePath: { eq: "keith-on-stage.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 2048, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

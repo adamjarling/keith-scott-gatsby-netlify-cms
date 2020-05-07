@@ -1,33 +1,29 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import PhotoGalleryRoll2 from "../../components/PhotoGalleryRoll2";
 import HeroImageBg from "../../components/HeroImageBg";
 
-const GalleryPage = ({ data }) => {
+const Photos = ({ data }) => {
   return (
     <Layout>
       <HeroImageBg
         title="Photos"
-        subtitle="Heros, friends, family"
+        subtitle="Live, Studio, and Fishing"
         bgImage={data.bgImage.childImageSharp.fluid}
       />
-
-      <section className="gallery inner-content section">
-        <div className="container content">
-          <PhotoGalleryRoll2 />
-        </div>
+      <section className="section">
+        <p>Coming soon...</p>
       </section>
     </Layout>
   );
 };
 
-export default GalleryPage;
+export default Photos;
 
 export const pageQuery = graphql`
-  query GalleryPageTemplate {
+  query PhotosPageTemplate {
     bgImage: file(
       sourceInstanceName: { eq: "myimages" }
-      relativePath: { eq: "gallery/salmon-roots-blues-2017.jpg" }
+      relativePath: { eq: "slide-keith_tony_hob.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2048, quality: 100) {

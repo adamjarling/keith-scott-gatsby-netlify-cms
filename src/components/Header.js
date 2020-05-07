@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import signature from "../images/keith-logo-horizontal.png";
+import signature from "../images/keith-logo-horizontal-invert.png";
 import { globalHistory as history } from "@reach/router";
 
 const NavNew = () => {
@@ -48,43 +48,42 @@ const Header = () => {
 
   return (
     <header className={`site-header ${pathName === "/" ? "home" : ""}`}>
-      <div className="container">
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item logo-item">
-              <img
-                src={signature}
-                alt="Keith Scott Signature"
-                className="keith-logo"
-              />
-              <small className="site-description is-hidden-mobile">
-                Heavy Blues. The Official Website of Keith Scott
-              </small>
-            </Link>
-            { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
-            <a
-              role="button"
-              className="navbar-burger"
-              aria-label="menu"
-              aria-expanded="false"
-              onClick={handleMobileButtonClick}
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div
-            className={`navbar-menu main-navigation ${
-              mobileNavOpen ? "is-active" : ""
-            }`}
+      <nav
+        className="navbar is-uppercase"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item logo-item">
+            <img
+              src={signature}
+              alt="Keith Scott Signature"
+              className="keith-logo"
+            />
+          </Link>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a
+            role="button"
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={handleMobileButtonClick}
           >
-            <div className="navbar-end">
-              <NavNew />
-            </div>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div
+          className={`navbar-menu main-navigation ${
+            mobileNavOpen ? "is-active" : ""
+          }`}
+        >
+          <div className="navbar-end">
+            <NavNew />
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 };

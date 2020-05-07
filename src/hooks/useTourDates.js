@@ -9,7 +9,6 @@ function useTourDates() {
         "https://rest.bandsintown.com/artists/keithscottblues/events?app_id=479f600310e79e4c65edd7b6c286adef"
       );
       const data = await response.json();
-      console.log("fn -> data", data);
       setDates(data);
     };
     fn();
