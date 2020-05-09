@@ -9,6 +9,7 @@ import useTourDates from "../hooks/useTourDates";
 import { Link } from "gatsby";
 import FacebookWeeklyGigs from "../components/FacebookWeeklyGigs";
 import HeroImageBg from "../components/HeroImageBg";
+import QuoteSlider from "../components/QuoteSlider";
 
 const IndexPage = ({ data }) => {
   const tourDates = useTourDates();
@@ -64,14 +65,7 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <div className="columns">
             <div className="column is-half">
-              <blockquote>
-                It was pretty incredible," he says. "After I got to Chicago, the
-                next thing I know I am at the Checkerboard Lounge and Buddy Guy
-                was there, just hanging around. Junior Wells was there and
-                everybody was real friendly — and it wasn't commercialized at
-                all.
-                <cite>Keith - memories first gigging in Chicago</cite>
-              </blockquote>
+              <QuoteSlider />
             </div>
             <div className="column is-half content">
               <h3 className="title">Tour Dates</h3>

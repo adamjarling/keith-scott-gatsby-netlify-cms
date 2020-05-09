@@ -8,8 +8,9 @@ const HomeVideos = () => {
 
       <div className="columns">
         <div className="column">
-          <div className="box">
+          <figure className="image is-16by9">
             <iframe
+              className="has-ratio"
               title="Sherwood Sessions - Keith Live and Acoustic"
               width="560"
               height="315"
@@ -17,14 +18,14 @@ const HomeVideos = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <h3 className="title">
-              Sherwood Sessions - Keith Live and Acoustic
-            </h3>
-          </div>
+          </figure>
+
+          <h3 className="title">Sherwood Sessions - Keith Live and Acoustic</h3>
         </div>
         <div className="column">
-          <div className="box">
+          <figure className="image is-16by9">
             <iframe
+              className="has-ratio"
               title="Live at the Salmon Arm Roots & Blues Festival"
               width="560"
               height="315"
@@ -33,18 +34,19 @@ const HomeVideos = () => {
               gesture="media"
               allowFullScreen
             ></iframe>
-            <h3 className="title">
-              Live at the Salmon Arm Roots & Blues Festival
-            </h3>
-            <p className="subtitle">British Columbia, Canada - 2017</p>
-          </div>
+          </figure>
+          <h3 className="title">
+            Live at the Salmon Arm Roots & Blues Festival
+          </h3>
+          <p className="subtitle">British Columbia, Canada - 2017</p>
         </div>
       </div>
 
       <div className="columns">
         <div className="column">
-          <div className="box">
+          <figure className="image is-16by9">
             <iframe
+              className="has-ratio"
               title="Live Keith Scott and the Electric Blues Junkies"
               width="560"
               height="315"
@@ -52,15 +54,16 @@ const HomeVideos = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <h3 className="title">
-              Live Keith Scott and the Electric Blues Junkies
-            </h3>
-            <p className="subtitle">Reggies - Chicago, IL</p>
-          </div>
+          </figure>
+          <h3 className="title">
+            Live Keith Scott and the Electric Blues Junkies
+          </h3>
+          <p className="subtitle">Reggies - Chicago, IL</p>
         </div>
         <div className="column">
-          <div className="box">
+          <figure className="image is-16by9">
             <iframe
+              className="has-ratio"
               title="Messin Around"
               width="560"
               height="315"
@@ -68,8 +71,8 @@ const HomeVideos = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <h3 className="title">Messin Around</h3>
-          </div>
+          </figure>
+          <h3 className="title">Messin Around</h3>
         </div>
       </div>
     </div>

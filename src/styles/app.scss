@@ -124,3 +124,8 @@ blockquote cite:before {
 .footer-signature {
   max-width: 225px;
 }
+
+// react-responsive-carousel overrides
+.carousel .slide {
+  background: transparent !important;
+}
