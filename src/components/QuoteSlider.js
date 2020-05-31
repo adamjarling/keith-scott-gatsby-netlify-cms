@@ -43,7 +43,7 @@ const QuoteSlider = () => {
       showThumbs={false}
     >
       {quotes.map(({ description, author, caption }) => (
-        <blockquote>
+        <blockquote key={caption}>
           {description}
           <cite>
             {author} - {caption}

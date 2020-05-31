@@ -10,6 +10,7 @@ import { Link } from "gatsby";
 import FacebookWeeklyGigs from "../components/FacebookWeeklyGigs";
 import HeroImageBg from "../components/HeroImageBg";
 import QuoteSlider from "../components/QuoteSlider";
+import BloggerFeed from "../components/BloggerFeed";
 
 const IndexPage = ({ data }) => {
   const tourDates = useTourDates();
@@ -125,10 +126,17 @@ const IndexPage = ({ data }) => {
       </section>
       <section className="section">
         <div className="container">
-          <header className="section-header">
-            <h2 className="section-title is-size-3-mobile">Fishing Blog</h2>
-          </header>
-          <FishingBlog />
+          <h2 className="title">Fishing Blog</h2>
+          <p className="subtitle">Join Keith on his fishing blues adventures</p>
+          <a
+            href="https://keithscottblog.blogspot.com/"
+            className="button is-primary"
+            style={{ marginBottom: "1rem" }}
+          >
+            View All Blog Posts
+          </a>
+          {/* <FishingBlog /> */}
+          <BloggerFeed />
         </div>
       </section>
     </Layout>
