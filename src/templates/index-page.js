@@ -11,6 +11,7 @@ import FacebookWeeklyGigs from "../components/FacebookWeeklyGigs";
 import HeroImageBg from "../components/HeroImageBg";
 import QuoteSlider from "../components/QuoteSlider";
 import BloggerFeed from "../components/BloggerFeed";
+import mbs from "../images/blues-society-memphis.png";
 
 const IndexPage = ({ data }) => {
   const tourDates = useTourDates();
@@ -124,6 +125,28 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </section>
+
+      <section className="hero is-dark">
+        <div className="hero-body">
+          <div className="container">
+            <h2 className="title">Blues Society Affiliations</h2>
+            <div className="columns">
+              <div className="column has-text-centered">
+                <h3 className="subtitle">Washington Blues Society</h3>
+                <a href="https://wablues.org/">https://wablues.org/</a>
+              </div>
+              <div className="column has-text-centered">
+                <h3 className="subtitle">Blues Society of Memphis</h3>
+                <a href="https://www.memphisbluessociety.com/">
+                  https://www.memphisbluessociety.com/
+                </a>
+                {/* <img src={mbs} alt="Blues Society of Memphis" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <h2 className="title">Fishing Blog</h2>
