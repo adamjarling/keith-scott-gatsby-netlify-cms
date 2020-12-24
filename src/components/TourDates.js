@@ -6,12 +6,12 @@ const TourDates = ({ tourDates }) => {
     <>
       {tourDates.map((td) => {
         return (
-          <div class="event" key={td.id}>
-            <div class="entry-date">
-              <div class="is-size-3">{moment(td.datetime).format("D")}</div>
-              <span class="month">{moment(td.datetime).format("MMM")}</span>
+          <div className="event" key={td.id}>
+            <div className="entry-date">
+              <div className="is-size-3">{moment(td.datetime).format("D")}</div>
+              <span className="month">{moment(td.datetime).format("MMM")}</span>
             </div>
-            <div class="entry-title">
+            <div className="entry-title">
               <h3>
                 <a href={td.url} target="_blank" rel="noopener noreferrer">
                   {td.title}

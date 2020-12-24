@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import HomeVideos from "../components/home/home-videos";
-import FishingBlog from "../components/FishingBlog";
 import TourDates from "../components/TourDates";
 import useTourDates from "../hooks/useTourDates";
 import { Link } from "gatsby";
@@ -11,7 +10,7 @@ import FacebookWeeklyGigs from "../components/FacebookWeeklyGigs";
 import HeroImageBg from "../components/HeroImageBg";
 import QuoteSlider from "../components/QuoteSlider";
 import BloggerFeed from "../components/BloggerFeed";
-import mbs from "../images/blues-society-memphis.png";
+import ReviewsScreenShots from "../components/ReviewsScreenShots";
 
 const IndexPage = ({ data }) => {
   const tourDates = useTourDates();
@@ -39,22 +38,8 @@ const IndexPage = ({ data }) => {
           <div className="container has-text-centered ">
             <div className="columns">
               <div className="column content">
-                <h3 className="title">Summer 2020</h3>
-                <p>
-                  First things First, I really want to thank everyone who
-                  supported all my livestream events .Special thanks to
-                  Elizabeth Montgomery at the Blues Foundation in Memphis and
-                  Eric Steiner at the Washington Blues Society as well for their
-                  support. Basically you saved my spirits and career!
-                </p>
-                <p>
-                  Summer has brought some great outdoor gigs in the Midwest and
-                  I was even able to make a great tour in Montana. Right now I
-                  have been working on some new music and hope to get together
-                  with my friends soon to record. With all that said I hope
-                  everyone is well and let's see what the fall brings!! All the
-                  best in Blues!! Keith
-                </p>
+                <h3 className="title">HAPPY HOLIDAYS 2020 AND HELLO 2021!</h3>
+
                 {/* <p>
                   Along with all the world's musicians, we're on complying with
                   the stay at home orders in Chicago and hope everyone is safe
@@ -137,6 +122,9 @@ const IndexPage = ({ data }) => {
               our main stage for a number of shows this year.
               <cite>Sara Harvey - Saloon Manager - Hama Hama Oysters</cite>
             </blockquote>
+
+            <h2 className="title mt-6">From the fans...</h2>
+            <ReviewsScreenShots />
           </div>
         </div>
       </section>
@@ -228,10 +216,10 @@ export const pageQuery = graphql`
     }
     bgImage: file(
       sourceInstanceName: { eq: "myimages" }
-      relativePath: { eq: "youtube-channel-art.jpg" }
+      relativePath: { eq: "blues-junkies-october-2020.JPG" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 2048, quality: 100) {
+        fluid(maxWidth: 2048, quality: 70, grayscale: true) {
           ...GatsbyImageSharpFluid
         }
       }
