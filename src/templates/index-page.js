@@ -79,7 +79,6 @@ const IndexPage = ({ data }) => {
               >
                 View All Dates
               </Link>
-              <FacebookWeeklyGigs />
             </div>
           </div>
         </div>
